@@ -1,9 +1,10 @@
 body {
   background: url('/assets/sayagata.png');
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "meriendaregular";
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "meriendabold";
   margin: 0;
   padding: 0;
 }
@@ -26,4 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: 10px 10px 5px grey;
   -moz-box-shadow: 10px 10px 5px grey;
   box-shadow: 10px 10px 5px grey;
+}
+
+.navbar-inverse .navbar-brand {
+  font-family: "meriendabold";
+  color: #624C7A;
+  font-size: 26px;
 }
