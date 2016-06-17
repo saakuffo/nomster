@@ -1,0 +1,30 @@
+Place.create(name: "Bar Fancy ", description: "Irony is delicious. Bar Fancy is rather drab, a hole in the wall, but we’re not here for the ambience. We’re here for great food. It is, after all, chef Jonathan Poon’s (of Chantecler) more laid-back digs. We come for the fresh oysters and the fried chicken platter. With a hint of five-spice, these are fat pieces with crispy, ragged edges and juicy interiors. Eat them with starchy-sweet Wonder Bread to sop up the juices. Winner, winner, chicken dinner. ", address: "1070 Queen St W, Toronto, ON M6J 1H8")
+
+
+
+Place.create(name: "Foxley", description: "Exposed bricks and Edison lights reflect the modest aesthetic of this Ossington eatery, but don’t be fooled: chef Tom Thai’s dishes are showstoppers. For eight years, he’s given the city fresh, vibrant and inventive tapas. Ceviches are his forte – try the Arctic char, voluptuous coral pieces fanned out on a bed of citrus, Sriracha, green onions and sesame and garnished with a teepee of Granny Smith matchsticks that play off the heat and buttery fish. Another must-have: Asian-style pork ribs braised until meltingly tender and finished on the flat-top with crisp, caramelized edges, then glazed with a sauce at once sweet, sour and spicy. You may be reluctant to share them with others.", address: "207 Ossington Ave, Toronto, ON M6J 2Z8")
+
+
+
+Place.create(name: "416 Snack Bar", description: "A bit hip-hop, a lot loud and very fun, 416 Snack Bar is underground chic. Eat by candlelight with a DJ blaring beats in the background, and choose your cocktail from bookshelves brimming with booze. Listing munchies at their finest, the menu, which tries to represent the diversity of the 416, is a tossed salad of cultures: Jamaican jerk fish, South American empanadas and Japanese spicy tuna hand roll. Go for the Korean fried chicken, buttermilk-marinated nuggets dredged in cornstarch, deep-fried and glistening in a red sweet and sour Gochujang sauce with a devilish spice hit. A kid of the 90s? Try the Snack-a-Roos, icebox cookies with both vanilla and chocolate dipping sauces and finished with (yay!) sprinkles.", address: "181 Bathurst St, Toronto, ON M5T 2R7")
+
+
+
+Place.create(name: "Gale's Snack Bar", description: "Another relic, this is the ultimate no-frills spot for diner eats. It may be a cramped shoebox with decor harking back to the 70s, but wait till you see the prices on the canary menu board, also dating from that era. Where else can you find a steamy hot turkey sandwich for $3.75? The bird is roasted on site daily, the meat tender and juicy. Slices are piled on starchy white bread and slathered with gravy. Save room for dessert that won’t break the bank. A slice of homemade pie of the day with ice cream costs a mere $1.50.", address: "539 Eastern Ave, Toronto, ON M4M")
+
+
+Place.create(name: "Frankies", description: "Those in the know come to this neighbourhood gem for the generous portions and familial hospitality. Although the prices are cheerfully cheap, the dishes are thoughtfully prepared, visually pleasing and usually delicious. For all-day-breakfast seekers, the pulled-pork Benedict is a must: English muffins blanketed with homemade pulled pork, topped with quivery poached eggs and silky hollandaise. The burgers are as big as your head. Try the Texan, a moist charbroiled patty slathered with chipotle mayo, homemade guacamole, jalapeño havarti, deep-fried jalapeño slices and topped with Doritos for a mega-crunch factor.", address: "994 Queen St W, Toronto, ON M6J 1H1")
+
+
+Place.create(name: "", description: "", address: "")
+
+
+Place.create(name: "", description: "", address: "")
+
+
+Place.create(name: "", description: "", address: "")
+
+
+Place.create(name: "", description: "", address: "")
+
+
