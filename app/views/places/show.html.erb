@@ -3,4 +3,7 @@
   <i><%= @place.address %></i>
   <br/><br/>
   <i><%= @place.description %></i>
+  <div class="pull right">
+    <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+  </div>
 </div>
