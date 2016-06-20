@@ -36,8 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .col-centered{
-    float: none;
-    margin: 0 auto;
+  float: none;
+  margin: 0 auto;
 }
 
 .field_with_errors {
@@ -45,4 +45,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFEEEE;
   border-radius: 3px;
   padding: 8px;
+}
+
+#map {
+  height: 300px;
 }
