@@ -2,6 +2,17 @@
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
   <br/><br/>
+
+  <% @place.photos.each do |photos| %>
+  <div class="col-xs-12 col-sm-6">
+    <% if photos.present? %>
+    <b><%= photos.caption %></b> -
+    <% end %>
+  </div>
+  <% end %>
+
+
+  <br/>
   <i><%= @place.description %></i>
 
   <% if @place.latitude.present? && @place.longitude.present? %>
@@ -31,21 +42,43 @@
   <% end %>
 
   <br/>
+  <!-- Modal for Photos -->
+  <div class="modal fade" id="myModalP" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
+        </div>
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |j| %>
+        <div class="modal-body">
+          <%= j.input :caption %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <%= j.submit "Add a photo", class: 'btn btn-primary' %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 
   <div class="pull right">
     <% if current_user && current_user == @place.user %>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-    <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
+    <!-- Button trigger modal -->
+    <button class="btn btn-info" data-toggle="modal" data-target="#myModalP">Upload Photo</button>
+    <%= link_to 'Delete', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}, class: 'btn btn-danger' %>
     <% end %>
+
   </div>
 </div>
-
 
 
 <div class="clear"></div>
 
 
-<!-- Modal -->
+<!-- Modal for Comments -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
