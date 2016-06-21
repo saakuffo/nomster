@@ -1,15 +1,16 @@
 Nomster::Application.configure do
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :test # change to smtp for access to smtp emails (Stephen)
 
-  config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",
-    port: 587,
-    domain: "example.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: ENV['GMAIL_ADDRESS'],
-    password: ENV['GMAIL_PASSWORD']
-  }
+  # Uncomment below for access to google smtp (Stephen)
+  # config.action_mailer.smtp_settings = {
+  #   address: "smtp.gmail.com",
+  #   port: 587,
+  #   domain: "example.com",
+  #   authentication: "plain",
+  #   enable_starttls_auto: true,
+  #   user_name: ENV['GMAIL_ADDRESS'],
+  #   password: ENV['GMAIL_PASSWORD']
+  # }
 
   config.action_mailer.default_url_options = { host: 'localhost:3030'}
   # Settings specified here will take precedence over those in config/application.rb.
