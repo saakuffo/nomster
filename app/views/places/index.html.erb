@@ -8,6 +8,7 @@
   <small><%= place.user.email %></small>
   <% end %>
 
+
   <% if place.comments.present? %>
   <div class="col-xs-12">
     <blockquote>
@@ -19,6 +20,12 @@
     </blockquote>
   </div>
   <% end %>
+
+  <div>
+  <% if place.photos.present? %>
+  <%= image_tag place.photos.first.picture %>
+  <% end %>
+  </div>
 
 </div>
 <% end %>
