@@ -21,11 +21,11 @@
   </div>
   <% end %>
 
-  <div>
+  <!-- <div class="col-xs-10 col-xs-offset-3"> -->
   <% if place.photos.present? %>
-  <%= image_tag place.photos.first.picture %>
+  <%= image_tag place.photos.first.picture, class: "img-responsive img-rounded", width: "300", height: "200"%>
   <% end %>
-  </div>
+  <!-- </div> -->
 
 </div>
 <% end %>

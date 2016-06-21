@@ -6,7 +6,7 @@
   <% @place.photos.each do |photos| %>
     <% if photos.present? %>
     <div class=''>
-      <%= image_tag photos.picture %>
+      <%= image_tag photos.picture, class: "img-responsive img-rounded", width: "300", height: "200"%>
       <p>
       <%= photos.caption %>
       </p>
