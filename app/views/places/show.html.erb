@@ -3,16 +3,6 @@
   <i><%= @place.address %></i>
   <br/><br/>
 
-  <% @place.photos.each do |photos| %>
-    <% if photos.present? %>
-    <div class=''>
-      <%= image_tag photos.picture, class: "img-responsive img-rounded", width: "300", height: "200"%>
-      <p>
-      <%= photos.caption %>
-      </p>
-    </div>
-    <% end %>
-  <% end %>
 
   <p></p>
   <br/>
@@ -124,3 +114,22 @@
   </div>
   <% end %>
 </div>
+
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+  <h1 class ="pull-left">Photos</h1>
+  <div class="clear"></div>
+<br/>
+  <% @place.photos.each do |photos| %>
+    <% if photos.present? %>
+    <div class='col-xs-3 col-xs-offest-2'>
+      <%= image_tag photos.picture, class: "img-responsive img-rounded", width: "300", height: "200"%>
+      <p>
+      <%= photos.caption %>
+      </p>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+
+
+
