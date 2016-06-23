@@ -9,19 +9,22 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag 'torontocityhall.jpg', class: 'img-responsive' %> <!-- FIX CSS SIZING LATER  height: '50%', width: '50%' -->
+      <%= image_tag 'torontocityhall.jpg', class: 'img-responsive' %>
+      <!-- FIX CSS SIZING LATER  height: '50%', width: '50%' -->
       <div class="carousel-caption">
         Find the hidden gems in Toronto
       </div>
     </div>
     <div class="item">
-      <%= image_tag 'cntower.jpg', class: 'img-responsive' %> <!-- FIX CSS SIZING LATER -->
+      <%= image_tag 'cntower.jpg', class: 'img-responsive' %>
+      <!-- FIX CSS SIZING LATER -->
       <div class="carousel-caption">
         Explore it's iconic locations
       </div>
     </div>
     <div class="item">
-      <%= image_tag 'bar1.jpg', class: 'img-responsive' %> <!-- FIX CSS SIZING LATER -->
+      <%= image_tag 'bar1.jpg', class: 'img-responsive' %>
+      <!-- FIX CSS SIZING LATER -->
       <div class="carousel-caption">
         Enjoy it's best Bars and Restaurants
       </div>
@@ -40,13 +43,13 @@
 <% @places.each do |place| %>
 <div class="booyah-box col-xs-8 col-xs-offset-2">
   <h1><%= link_to place.name, place_path(place) %></h1>
-  <i><%= place.address %></i><br /><br />
-  <p> 
+  <i><%= place.address %></i><br/><br/>
+  <p>
 
     <% if place.photos.present? %>
     <div class="col-xs-3">
       <%= image_tag place.photos.first.picture, class: "img-responsive img-rounded"%>
-      
+
     </div>
     <% end %>
     <div class="col-xs-9">
@@ -54,22 +57,20 @@
 
       <% if place.user.present? %>
       <p>
-        <br />
+        <br/>
         <small><%= place.user.email %></small>
       </p>
-      <% end %>  
+      <% end %>
     </div>
   </p>
-  <br />
-
-
-
+  <br/>
 
   <% if place.comments.present? %>
   <div class="col-xs-12">
     <blockquote>
       <% if place.comments.last.humanized_rating.present? %>
-      <b><%= place.comments.last.humanized_rating %></b> -
+      <b><%= place.comments.last.humanized_rating %></b>
+      -
       <% end %>
       <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
@@ -79,8 +80,6 @@
 
 </div>
 <% end %>
-
-
 
 <div class="row">
   <div class="col-xs-4 col-centered">
