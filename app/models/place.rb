@@ -1,7 +1,7 @@
 class Place < ActiveRecord::Base
   belongs_to :user
-  has_many :comments # , dependent: :destroy
-  has_many :photos # , dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_many :photos, dependent: :destroy
   # need to figure out dependent stuff
   geocoded_by :address
   after_validation :geocode
