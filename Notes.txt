@@ -1,0 +1,9 @@
+Homework
+- Add a comment and a photo in one swoop
+- Long term :infinite scroll
+- A feature to call out popular places
+- Claim ownership of place
+
+Classes
+- Card and Deck classes
+-- Blackjack
