@@ -44,6 +44,18 @@ gem 'figaro', ">= 1.0.0"
 gem 'carrierwave'
 gem 'fog'
 
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails', '~> 4.5'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'byebug'
+  gem 'rubocop'
+  gem 'simplecov', require: false
+  gem 'codecov', require: false, group: :test
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
