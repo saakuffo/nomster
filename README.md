@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/saakuffo/splurty_saa/branch/master/graph/badge.svg)](https://codecov.io/gh/saakuffo/splurty_saa)
+[![codecov](https://codecov.io/gh/saakuffo/nomster/branch/master/graph/badge.svg)](https://codecov.io/gh/saakuffo/nomster)
 [ ![Codeship Status for saakuffo/nomster](https://codeship.com/projects/0d804150-8f8f-0134-a721-6a60e1302379/status?branch=master)](https://codeship.com/projects/185606)
 
 == Yelp Clone
